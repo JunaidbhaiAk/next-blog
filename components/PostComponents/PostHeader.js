@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Head from 'next/head'
 import { useState,useEffect } from "react";
-const PostHeader = ({imgurl,title}) => {
+const PostHeader = ({imgurl,title,sub}) => {
 
     const [scrollwidth,setscrollwidth] = useState('0');
     useEffect(()=>{
@@ -30,6 +30,7 @@ const PostHeader = ({imgurl,title}) => {
         <title>{title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:title" content={title} key="title" />
+        <meta name="description" content={sub}></meta>
     </Head>
     <Image className="w-full h-[300px] bg-cover object-cover" src={imgurl} alt="cool" width={700} height={400}/>
     <div style={progressMainStyle} id="scr"></div>

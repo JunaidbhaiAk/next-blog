@@ -4,7 +4,7 @@ import ApolloClient from "apollo-client";
 
 const client = new ApolloClient({
     link:PrismicLink({
-        uri:"https://myblogy.prismic.io/graphql"
+        uri: process.env.NEXT_PUBLIC_GRAPHQL_API
     }),
     cache: new InMemoryCache()
 })

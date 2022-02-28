@@ -12,7 +12,6 @@ export default function FeaturedCard({posts}) {
             <Image src={node.post_image.url} alt="logo" className="bg-cover rounded-tl-md rounded-bl-md" layout="fill" objectFit="cover"/>
             </div>
             <div className="flex flex-col w-[50%] items-start px-5 py-3 justify-evenly">
-                {/* <p className="ml-auto text-sm font-mono text-highlight">FeaturedCard</p> */}
                 <span className="text-sm text-sub pb-1 relative w-[100%] before:font-mono before:content-['FeatureCard'] before:block before:right-0 before:absolute before:text-[0.6rem] before:text-highlight  before:bottom-[1.8rem] sm:before:text-sm">Technology</span>
                 <h1 className="text-2xl sm:text-3xl font-bold text-white pb-2">{node.post_title[0].text}</h1>
                 <div className="flex flex-col">
@@ -23,7 +22,6 @@ export default function FeaturedCard({posts}) {
         </div>
         </Link>
         })}
-        {/* <div><p className="absolute">FeaturedCard</p></div> */}
       
       </>
     )

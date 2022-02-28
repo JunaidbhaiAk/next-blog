@@ -28,7 +28,7 @@ const Post = ({data}) => {
   return (
   <div className="2xl:px-[15rem] flex flex-col w-full min-h-screen bg-primary xl:px-[8rem] lg:px-[6rem] md:px-[4rem] sm:px-[2rem]">
       {/* {console.log(data)} */}
-      <PostHeader imgurl={data.post_image.url} title={data.post_title[0].text}/>
+      <PostHeader imgurl={data.post_image.url} title={data.post_title[0].text} sub={data.post_subtitle[0].text} />
       <PostContent ele={data}/>
   </div>
   );

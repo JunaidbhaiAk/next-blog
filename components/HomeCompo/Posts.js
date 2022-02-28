@@ -6,7 +6,6 @@ export default function Posts({posts}) {
              return ( 
                 !node.post_featured && <BlogCard post={node} key={node._meta.id}/>
              )
-            // console.log(ele);
           })}
       </div>
     )
