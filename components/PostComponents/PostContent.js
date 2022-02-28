@@ -3,7 +3,7 @@ import moment from "moment";
 import Image from "next/image";
 import { RichText, Elements } from "prismic-reactjs";
 import Prism from "prismjs";
-import "prismjs/themes/prism-lucario.css";
+
 
 const PostContent = ({ ele }) => {
   useEffect(() => {
