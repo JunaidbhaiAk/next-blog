@@ -1,4 +1,4 @@
-import client from "./prismichelper";
+import client from "./prismicHelper";
 import gql from "graphql-tag";
 
 export const fetchAllData = async () => {
