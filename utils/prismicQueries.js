@@ -41,7 +41,8 @@ export const fetchSingleData = async(slug) => {
             query{
                 blog_post(uid:"${slug}",lang:"en-us"){
                   post_image,
-                  post_title
+                  post_title,
+                  post_subtitle
                   post_content,
                   post_tags,
                   post_date

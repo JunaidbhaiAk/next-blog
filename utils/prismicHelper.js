@@ -1,9 +1,9 @@
-import { PrismicLink } from "apollo-link-prismic";
+import { createPrismicLink } from "apollo-link-prismic";
 import { InMemoryCache } from "apollo-cache-inmemory";
 import ApolloClient from "apollo-client";
 
 const client = new ApolloClient({
-    link:PrismicLink({
+    link:createPrismicLink({
         uri: process.env.NEXT_PUBLIC_GRAPHQL_API
     }),
     cache: new InMemoryCache()
