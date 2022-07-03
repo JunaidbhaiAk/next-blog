@@ -8,7 +8,8 @@ export const getStaticProps = async({params}) => {
   return{
     props:{
       data:post,
-    }
+    },
+    revalidate: 60
   }
 }
 
@@ -19,7 +20,7 @@ export const getStaticPaths = async() => {
     paths:data.map(({node})=>({
       params:{slug:node._meta.uid}
     })),
-    fallback:false,
+    fallback: 'blocking',
   }
   
 }
